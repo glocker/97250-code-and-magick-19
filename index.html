@@ -181,6 +181,34 @@
   </div>
 </template>
 
+<script>
+  var fireballSize = 22; // Размер шара
+
+  var getFireballSpeed = function (left) { // Меняем скорость шара от ветра
+    if (left) {
+      return getFireballSpeed = 5;
+    }
+    else {
+      return getFireballSpeed = 2;
+    }
+  }
+  
+  var wizardSpeed = 3; // Скорость движения мага
+  var wizardWidth = 70; // Ширина мага
+
+  var getWizardHeight = function () {
+    return getWizardHeight = 1.337 * wizardWidth;
+  }
+
+  function getWizardX (width) {
+    return width / 2;
+  }
+
+  function getWizardY (height) {
+    return height / 3;
+  }
+
+</script>
 <script src="js/game.js"></script>
 
 </body>
